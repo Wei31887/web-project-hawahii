@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: none;
+  font-weight: normal;
 }
 
 header {
@@ -16,6 +16,8 @@ header {
   height: 100px;
   align-items: center;
   flex-wrap: wrap;
+  text-indent: 1rem;
+  font-weight: bold;
 }
 header div.title {
   padding-left: 1rem;
@@ -47,6 +49,7 @@ header nav ul li a {
   text-decoration: none;
   font-size: 1.35rem;
   color: rgb(3, 127, 127);
+  transition: all 0.1s ease;
 }
 header nav ul li a:hover {
   color: rgb(6, 4, 118);
@@ -81,12 +84,13 @@ main section.imagePart div.filter {
 }
 main section.imagePart button {
   padding: 0.7rem 1.5rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: white;
   background-color: rgb(0, 234, 255);
   border-style: none;
   border-radius: 40px;
   cursor: pointer;
+  transition: all 0.1s ease;
 }
 main section.imagePart button:hover {
   background-color: rgb(0, 210, 119);
@@ -97,4 +101,66 @@ main section.imagePart h3 {
   font-weight: bold;
   font-size: 3rem;
   padding: 2rem;
+}
+main section.second {
+  width: 100vw;
+}
+main section.second h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 1.5rem;
+  margin-top: 2.5rem;
+}
+main section.second section.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main section.second section.cards .card {
+  flex: 1 1 300px;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section.second section.cards .card img {
+  margin: 1rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+main section.second section.cards .card h4 {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+main section.second section.cards .card p {
+  margin: 1rem;
+  font-size: 1rem;
+}
+main section.second section.cards .card a {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: rgb(41, 208, 178);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+main section.second section.cards .card a:hover {
+  background-color: rgb(25, 130, 111);
+}
+main section.second section.cards #deliver {
+  background-color: rgba(66, 255, 123, 0.15);
+}
+main section.second section.cards #pay {
+  background-color: rgba(66, 255, 189, 0.15);
+}
+main section.second section.cards #cate {
+  background-color: rgba(66, 236, 255, 0.15);
 }/*# sourceMappingURL=style.css.map */
